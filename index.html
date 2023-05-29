@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"></link>
+    <script src="classes.js" defer></script>
+    <script src="file_functions.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Graphite</title>
+</head>
+<body>
+    <div id="bar">
+        <div>
+            <button class="bar-button" onclick="newFile()">New</button>
+            <button class="bar-button" onclick="openFile()">Open</button>
+            <button class="bar-button" onclick="saveFile()">Save</button>
+            <button class="bar-button" onclick="exportFile()">Export</button>
+        </div>
+        <img id="logo" src="logo2.png"></img>
+    </div>
+    <div id="content">
+        <div id="side">
+            <div class="side-elem" onclick="selectElement(1)">Line</div>
+            <div class="side-elem" onclick="selectElement(2)">Arrow</div>
+            <div class="side-elem" onclick="selectElement(3)">Dashed Line</div>
+            <div class="side-elem" onclick="selectElement(4)">Triangle</div>
+            <div class="side-elem" onclick="selectElement(5)">Fixed End</div>
+            <div class="side-elem" onclick="selectElement(6)">Arc</div>
+            <div class="side-elem" onclick="selectElement(7)">Circle</div>
+            <div class="side-elem" onclick="selectElement(8)">Text
+                <input>
+            </div>
+        </div>
+        <div id="main">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+</body>
+</html>
